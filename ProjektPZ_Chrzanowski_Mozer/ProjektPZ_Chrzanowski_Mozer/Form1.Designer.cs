@@ -228,7 +228,7 @@
             this.slowA.TabIndex = 111;
             this.slowA.Text = "Szukaj ";
             this.slowA.UseVisualStyleBackColor = false;
-         
+            this.slowA.Click += new System.EventHandler(this.AlgorytmAGwiazdka);
             // 
             // mediumA
             // 
@@ -239,6 +239,7 @@
             this.mediumA.TabIndex = 110;
             this.mediumA.Text = "Szukaj ";
             this.mediumA.UseVisualStyleBackColor = false;
+            this.mediumA.Click += new System.EventHandler(this.AlgorytmAGwiazdka);
             // 
             // fastA
             // 
@@ -249,6 +250,7 @@
             this.fastA.TabIndex = 109;
             this.fastA.Text = "Szukaj ";
             this.fastA.UseVisualStyleBackColor = false;
+            this.fastA.Click += new System.EventHandler(this.AlgorytmAGwiazdka);
             // 
             // label8
             // 
