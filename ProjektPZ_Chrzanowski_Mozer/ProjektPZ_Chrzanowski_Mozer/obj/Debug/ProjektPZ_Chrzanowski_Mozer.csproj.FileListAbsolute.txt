@@ -1,0 +1,9 @@
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\obj\Debug\ProjektPZ_Chrzanowski_Mozer.csprojAssemblyReference.cache
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\obj\Debug\ProjektPZ_Chrzanowski_Mozer.Properties.Resources.resources
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\obj\Debug\ProjektPZ_Chrzanowski_Mozer.csproj.GenerateResource.cache
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\bin\Debug\ProjektPZ_Chrzanowski_Mozer.exe.config
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\bin\Debug\ProjektPZ_Chrzanowski_Mozer.exe
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\bin\Debug\ProjektPZ_Chrzanowski_Mozer.pdb
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\obj\Debug\ProjektPZ_Chrzanowski_Mozer.exe
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\obj\Debug\ProjektPZ_Chrzanowski_Mozer.pdb
+C:\Users\Kajti\projekt\mobilne\Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\ProjektPZ_Chrzanowski_Mozer\obj\Debug\ProjektPZ_Chrzanowski_Mozer.Form1.resources
