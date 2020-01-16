@@ -275,7 +275,7 @@ namespace ProjektPZ_Chrzanowski_Mozer
 
                     if (newNode.Equals(destinationNode)) //sprawdź czy jesteśmy u celu
                     {
-                        Console.WriteLine("BAJLANDO ^^");
+                        Console.WriteLine("BAJLANDO <3");
                         return newNode;
                     }
                     if (newNode.obstructionNode) //jeżeli węzeł jest lądem to go pomiń

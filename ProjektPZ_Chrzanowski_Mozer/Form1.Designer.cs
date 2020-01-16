@@ -54,6 +54,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.liczbaWierzcholkow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -134,7 +137,7 @@
             // resetButton
             // 
             this.resetButton.BackColor = System.Drawing.Color.Red;
-            this.resetButton.Location = new System.Drawing.Point(591, 28);
+            this.resetButton.Location = new System.Drawing.Point(574, 28);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(61, 28);
             this.resetButton.TabIndex = 105;
@@ -295,7 +298,7 @@
             // czasLabel
             // 
             this.czasLabel.AutoSize = true;
-            this.czasLabel.Location = new System.Drawing.Point(604, 89);
+            this.czasLabel.Location = new System.Drawing.Point(586, 86);
             this.czasLabel.Name = "czasLabel";
             this.czasLabel.Size = new System.Drawing.Size(31, 13);
             this.czasLabel.TabIndex = 1002;
@@ -304,7 +307,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(604, 63);
+            this.label19.Location = new System.Drawing.Point(586, 63);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 13);
             this.label19.TabIndex = 1003;
@@ -317,29 +320,65 @@
             "Londyn",
             "Sydney",
             "NY",
-            "Gdansk"});
-            this.listBox1.Location = new System.Drawing.Point(687, 63);
+            "Gdansk",
+            "Tokyo"});
+            this.listBox1.Location = new System.Drawing.Point(643, 77);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(124, 56);
+            this.listBox1.Size = new System.Drawing.Size(100, 43);
             this.listBox1.TabIndex = 1004;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.Location = new System.Drawing.Point(687, 26);
+            this.button1.Location = new System.Drawing.Point(643, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 32);
+            this.button1.Size = new System.Drawing.Size(215, 32);
             this.button1.TabIndex = 1006;
             this.button1.Text = "Wybierz Miasto";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Items.AddRange(new object[] {
+            "Londyn",
+            "Sydney",
+            "NY",
+            "Gdansk",
+            "Tokyo"});
+            this.listBox2.Location = new System.Drawing.Point(764, 78);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(94, 43);
+            this.listBox2.TabIndex = 1007;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(793, 61);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 13);
+            this.label12.TabIndex = 1008;
+            this.label12.Text = "Start";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(671, 61);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(22, 13);
+            this.label13.TabIndex = 1009;
+            this.label13.Text = "Cel";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
-            this.ClientSize = new System.Drawing.Size(907, 728);
+            this.ClientSize = new System.Drawing.Size(904, 728);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.czasLabel);
@@ -392,6 +431,9 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
     
 }

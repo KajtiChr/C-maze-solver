@@ -20,8 +20,9 @@ namespace ProjektPZ_Chrzanowski_Mozer
         Pen bluePen = new Pen(Color.Pink, 3);
         Pen greenPen = new Pen(Color.Green, 1);
         Pen blue2Pen = new Pen(Color.Blue, 3);
-        int[] wspolrzedne = new int[8] {926, 255, 1584, 729, 580, 320, 1012, 236};
+        int[] wspolrzedne = new int[10] {926, 255, 1584, 729, 580, 320, 1012, 236, 1584, 347};
         String cel;
+        String start;
         // Londyn 926, 255 Sydney - 1584, 729 NY - 1859, 1079 GD 1012, 236
 
         public class point
@@ -96,8 +97,12 @@ namespace ProjektPZ_Chrzanowski_Mozer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cel = listBox1.SelectedItem.ToString();
-            Console.WriteLine(cel);
+            try
+            {
+                cel = listBox1.SelectedItem.ToString();
+                start = listBox2.SelectedItem.ToString();
+            }
+            catch { }
         }
 
         private void AlgorytmAGwiazdka(object sender, EventArgs e)
@@ -126,7 +131,7 @@ namespace ProjektPZ_Chrzanowski_Mozer
             }
             else
             {
-                hBoost = 2;
+                hBoost = 1;
                 refreshTime = 450;
             }
 
@@ -134,33 +139,69 @@ namespace ProjektPZ_Chrzanowski_Mozer
             Point tokyo = new Point(1584, 347);
             Point london = new Point(926, 255); - Sydney - 1584, 729 NY - 1859, 1079 GD 1012, 236
             */
-            Point tokyo = new Point(1584, 347);
+            Point tokyo = new Point();
             Point london = new Point();
-            switch (cel)
+
+                switch (cel)
+                {
+                    case "Londyn":
+                        london.X = wspolrzedne[0];
+                        london.Y = wspolrzedne[1];
+                        break;
+                    case "Sydney":
+                        london.X = wspolrzedne[2];
+                        london.Y = wspolrzedne[3];
+                        break;
+                    case "NY":
+                        london.X = wspolrzedne[4];
+                        london.Y = wspolrzedne[5];
+                        break;
+                    case "Gdansk":
+                        london.X = wspolrzedne[6];
+                        london.Y = wspolrzedne[7];
+                        break;
+                    case "Tokyo":
+                        london.X = wspolrzedne[8];
+                        london.Y = wspolrzedne[9];
+                        break;
+                    default:
+                        london.X = wspolrzedne[0];
+                        london.Y = wspolrzedne[1];
+                        break;
+                }
+
+            switch (start)
             {
                 case "Londyn":
-                    london.X = wspolrzedne[0];
-                    london.Y = wspolrzedne[1];
+                    tokyo.X = wspolrzedne[0];
+                    tokyo.Y = wspolrzedne[1];
                     break;
                 case "Sydney":
-                    london.X = wspolrzedne[2];
-                    london.Y = wspolrzedne[3];
+                    tokyo.X = wspolrzedne[2];
+                    tokyo.Y = wspolrzedne[3];
                     break;
                 case "NY":
-                    london.X = wspolrzedne[4];
-                    london.Y = wspolrzedne[5];
+                    tokyo.X = wspolrzedne[4];
+                    tokyo.Y = wspolrzedne[5];
                     break;
                 case "Gdansk":
-                    london.X = wspolrzedne[6];
-                    london.Y = wspolrzedne[7];
+                    tokyo.X = wspolrzedne[6];
+                    tokyo.Y = wspolrzedne[7];
+                    break;
+                case "Tokyo":
+                    tokyo.X = wspolrzedne[8];
+                    tokyo.Y = wspolrzedne[9];
                     break;
                 default:
-                    london.X = wspolrzedne[0];
-                    london.Y = wspolrzedne[1];
-                    break;                 
+                    tokyo.X = wspolrzedne[8];
+                    tokyo.Y = wspolrzedne[9];
+                    break;
             }
-            
-         
+
+
+
+
+
 
 
             Bitmap mapa = new Bitmap(@"..\..\mapaAlt.png");
@@ -195,7 +236,7 @@ namespace ProjektPZ_Chrzanowski_Mozer
 
             }
             sw.Stop();
-            czasLabel.Text = sw.Elapsed.Milliseconds.ToString() + " ms";
+           // czasLabel.Text = sw.Elapsed.Milliseconds.ToString() + " ms";
 
         }
 
