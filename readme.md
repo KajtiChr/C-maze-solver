@@ -1,6 +1,6 @@
 ## Table of contents
 * [General info](#general-info)
-
+* [Technologies](#technologies)
 
 ## General info
 The project is related to maze solver. Main topic was to find the shortest path between chosen towns. The only way of traveling we taking care of is sea. That was group project, I was respossiable for a A* algorithm.
